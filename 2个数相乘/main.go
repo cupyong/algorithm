@@ -37,7 +37,6 @@ func multipy(num1, num2 string) string {
 			}
 		}
 	}
-
 	ans := buf.String()
 	if len(ans) == 0 {
 		return "0"

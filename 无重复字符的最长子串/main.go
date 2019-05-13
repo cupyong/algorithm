@@ -3,18 +3,18 @@ package main
 import "fmt"
 
 func main() {
-	s :="abcaef"
-	l :=longofLongestSubstring(s)
+	s := "abcaef"
+	l := longofLongestSubstring(s)
 	fmt.Println(l)
 }
 
-func longofLongestSubstring(s string) int  {
-	if len(s)==0{
-		return  0
+func longofLongestSubstring(s string) int {
+	if len(s) == 0 {
+		return 0
 	}
 	m := make(map[string]int)
-	maxLength :=0
-	j:=0
+	maxLength := 0
+	j := 0
 	for i, v := range s {
 		c := string(v)
 		if val, ok := m[c]; ok {
